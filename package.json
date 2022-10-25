@@ -13,11 +13,13 @@
         "export": "next build && next export"
     },
     "dependencies": {
+        "@apollo/client": "^3.7.0",
         "@emailjs/browser": "^3.6.2",
         "axios": "^0.26.1",
         "disqus-react": "^1.1.2",
         "framer-motion": "^6.2.10",
         "fslightbox-react": "^1.6.2-2",
+        "graphql": "^16.6.0",
         "gray-matter": "^4.0.3",
         "gsap": "^3.10.4",
         "marked": "^4.0.14",

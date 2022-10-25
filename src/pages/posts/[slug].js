@@ -35,17 +35,17 @@ const Posts = ({ posts, hasMore, categories, recentPosts }) => {
   return (
     <Layout>
       <Head>
-        <title>Joe Shepard - Projects and Technical Articles</title>
+        <title>Blogs - Bieber - React Personal Portfolio Template</title>
       </Head>
       <Breadcrumb
-        title="Projects and Technical Articles"
+        title="Blogs"
         paths={[
           {
             name: "Home",
             link: "/",
           },
           {
-            name: "Projects",
+            name: "Blogs",
             link: "",
           },
         ]}

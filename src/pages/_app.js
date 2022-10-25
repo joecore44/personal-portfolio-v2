@@ -6,6 +6,8 @@ import { AppProvider } from "../context/appContext";
 import { Hydrate, QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { ApolloProvider } from "@apollo/client/react";
+import { client } from "../lib/apollo";
 import "normalize.css";
 import "nprogress/nprogress.css";
 import "swiper/css";
@@ -44,9 +46,11 @@ function MyApp({ Component, pageProps }) {
           <title>Joe Shepard - Software Engineer</title>
         </Head>
         <ParallaxProvider>
-          <Hydrate state={pageProps.dehydratedState}>
-            <Component {...pageProps} />
-          </Hydrate>
+          <ApolloProvider client={client}>
+            <Hydrate state={pageProps.dehydratedState}>
+              <Component {...pageProps} />
+            </Hydrate>
+          </ApolloProvider>
         </ParallaxProvider>
       </AppProvider>
       {/* <ReactQueryDevtools initialIsOpen={false} /> */}
