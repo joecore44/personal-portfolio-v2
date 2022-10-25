@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Python: Django, Flask, DRF, FastAPI",
+        "percentage": 95
+    },
+    {
+        "id": 2,
+        "title": "Node Js: React, Next, Express, Nest",
+        "percentage": 75
+    },
+    {
+        "id": 3,
+        "title": "PHP: Laravel, Codeigniter, Symfony",
+        "percentage": 80
+    },
+    {
+        "id": 4,
+        "title": "JS: jQuery, Vue, Angular, React Native",
+        "percentage": 70
+    },
+    {
+        "id": 5,
+        "title": "HTML CSS: Bootstrap, Tailwind, Material UI",
+        "percentage": 95
+    },
+    {
+        "id": 6,
+        "title": "Cloud: AWS, Azure, GCP",
+        "percentage": 85
+    },
+    {
+        "id": 7,
+        "title": "CI/CD: CodePipeLine, Jenkins, GitLab",
+        "percentage": 75
+    },
+    {
+        "id": 8,
+        "title": "Sys Admin: Linux, Win, Docker, Kubernetes",
+        "percentage": 70
+    }
+]

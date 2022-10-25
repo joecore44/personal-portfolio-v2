@@ -1,0 +1,29 @@
+{
+    "firstName": "Joe",
+    "lastName": "Shepard",
+    "fullName": "Joe Shepard",
+    "thumbImage": "/images/formal-image-joe-s.png",
+    "largeImage": "/images/about-image.jpg",
+    "bio": "Full Stack Software Engineer with a passion for building scalable products. I have a background in application development, system design, and machine learning. ",
+    "age": 37,
+    "nationality": "American",
+    "languages": [
+        "English"
+    ],
+    "address": "Prescott, Arizona",
+    "freelance": "Available",
+    "socialAddress": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://twitter.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "dribbble": "https://dribbble.com"
+    },
+    "phoneNumbers": [
+        "+012-3456-7891",
+        "+012-3456-7892"
+    ],
+    "emailAddress": [
+        "joe@joeshepard.dev"
+    ]
+}
