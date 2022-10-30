@@ -1,4 +1,5 @@
 import Blog from "./Blog";
+import BlogHome from "./BlogHome";
 import Portfolio from "./Portfolio";
 import ProgressBar from "./ProgressBar";
 import ProgressCircle from "./ProgressCircle";
@@ -16,6 +17,7 @@ export {
   Portfolio,
   Review,
   Blog,
+  BlogHome,
   SocialIcons,
   Breadcrumb,
 };

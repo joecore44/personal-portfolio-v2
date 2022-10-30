@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { dehydrate, QueryClient } from "react-query";
 import { Element as Section } from "react-scroll";
+import { BlogHome } from "../components/elements/BlogHome";
 import {
   AboutSection,
   BlogSection,
@@ -16,7 +17,7 @@ import { Layout } from "../components/layout";
 import { SectionHeading } from "../components/utils";
 import { getPostsByPage } from "../lib/blogging";
 
-const Homepage1 = ({ posts }) => {
+const Homepage1 = ({posts}) => {
   return (
     <Layout>
       <Head>
@@ -96,7 +97,7 @@ const Homepage1 = ({ posts }) => {
       >
         <div className="container mx-auto">
           <SectionHeading title="Projects & Content" watermark="Projects" />
-          <BlogSection posts={posts} />
+          <BlogSection posts={posts}/>
         </div>
       </Section>
       {/* End Blog Section */}

@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState, useEffect } from "react";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Blog } from "../elements";
+import { BlogHome } from "../elements";
 import { Spinner } from "../utils";
 
 const BlogSection = ({ posts }) => {
@@ -53,14 +53,11 @@ const BlogSection = ({ posts }) => {
           },
         }}
       >
-        {posts &&
-          posts.map((post, index) => (
-            <SwiperSlide key={index}>
-              <div className="slider-item">
-                <Blog post={post} />
-              </div>
-            </SwiperSlide>
-          ))}
+        
+          
+                <BlogHome />
+             
+  
       </Swiper>
       <button className="swiper-button-prev" onClick={handlePrev}></button>
       <button className="swiper-button-next" onClick={handleNext}></button>
