@@ -4,6 +4,8 @@ import { useQuery } from "react-query";
 import { getPortfolios } from "../../fetchers";
 import { Portfolio } from "../elements";
 import { PortfolioFilters, Spinner } from "../utils";
+import { getPosts } from "../../hooks/useGetPosts"
+
 
 const PortfoliosSection = () => {
   // States
@@ -11,10 +13,13 @@ const PortfoliosSection = () => {
   const [currentFilter, setCurrentFilter] = useState("");
   const [pageNumber, setPageNumber] = useState(1);
 
-  const { data, isLoading } = useQuery("portfolios", getPortfolios);
+  //const { data, isLoading } = useQuery("portfolios", getPortfolios);
+  const {error, isLoading, data } = getPosts();
+  //if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error : {error}</p>;
 
   useEffect(() => {
-    if (data) setVisiblePortfolios(data.slice(0, 6));
+    if (data) setVisiblePortfolios();
   }, [data]);
 
   // Portfolio Filter function

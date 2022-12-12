@@ -2,6 +2,8 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import { createSlug, filterPostsByPage, sortPostByDate } from ".";
+import { getPosts } from "../hooks/useGetPosts";
+
 
 const LIMIT = 6;
 
@@ -37,7 +39,11 @@ const getAllPostsData = () => {
   return posts.sort(sortPostByDate);
 };
 
+
+
+
 // Get posts by page
+
 const getPostsByPage = (page = 1, limit = 6) => {
   const tempPosts = getAllPostsData();
   const posts = filterPostsByPage(tempPosts, page, limit);
@@ -45,7 +51,11 @@ const getPostsByPage = (page = 1, limit = 6) => {
     posts,
     hasMore: limit * page < tempPosts.length,
   };
-};
+}; 
+
+
+
+
 
 // Get Page Paths
 const getPagesPath = () => {

@@ -1,13 +1,15 @@
 import { useCallback, useRef, useState, useEffect } from "react";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { BlogHome } from "../elements";
+import { Blog } from "../elements";
 import { Spinner } from "../utils";
+import { getPosts } from "../../hooks/useGetPosts";
 
-const BlogSection = ({ posts }) => {
+const BlogSection = () => {
+
   const [mounted, setMounted] = useState(false);
   const sliderRef = useRef(null);
-
+  
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -22,13 +24,22 @@ const BlogSection = ({ posts }) => {
     sliderRef.current.swiper.slideNext();
   }, []);
 
+  const {error, loading, data } = getPosts();
+  
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error : {error}</p>;
+  const postsData = [];
+  if(data) postsData = data.posts.nodes;
+  
+
   if (!mounted)
     return (
       <div className="block py-20 text-center">
         <Spinner />
       </div>
-    );
-  if (!posts) return null;
+    ); 
+  if (!postsData) return null;
+  
 
   return (
     <div className="swiper-holder">
@@ -53,11 +64,15 @@ const BlogSection = ({ posts }) => {
           },
         }}
       >
-        
-          
-                <BlogHome />
-             
-  
+        {postsData &&
+          postsData.map((post, index) => (
+            
+            <SwiperSlide key={index}>
+              <div className="slider-item">
+                <Blog post={post} />
+              </div>
+            </SwiperSlide>
+          ))}
       </Swiper>
       <button className="swiper-button-prev" onClick={handlePrev}></button>
       <button className="swiper-button-next" onClick={handleNext}></button>

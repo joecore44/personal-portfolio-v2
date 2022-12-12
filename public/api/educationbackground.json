@@ -22,31 +22,32 @@
     },
     {
         "id": 4,
+        "title": "Cloud Application Development with Node.Js & Express",
+        "meta": "IBM Skills Network",
+        "text": "The IBM Cloud Application Development with Node.js and Express certificate is designed to demonstrate your ability to build event driven, scalable server-side applications using the Node.js and the Express Framework. ",
+        "year": "2022"
+    },
+    {
+        "id": 5,
         "title": "Distributed Version Control Systems",
         "meta": "IBM Skills Network",
         "text": "This certificate is designed to demonstrate your ability to build scalable, fault talerant, cloud-native applications using Python and Python Web Frameworks (Django, Flask, FastAPI and the Django Rest Framework) in the AWS environment while utilizing modern CI/CD practices.",
         "year": "2022"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Certified PHP Engineer",
         "meta": "Zend by Perforce",
         "text": "The Zend Certified PHP Engineer is an industry-wide standard that recognizes PHP expertise and is a measure of distinction that employers use to evaluate prospective employees.",
         "year": "2015"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "CompTIA A+",
         "meta": "CompTIA",
         "text": "CompTIA A+ certified professionals are proven problem solvers. They support today’s core technologies from security to networking to virtualization and more. CompTIA A+ is the industry standard for launching IT careers into today’s digital world.",
         "year": "2012"
-    },
-    {
-        "id": 7,
-        "title": "Duplicate Certification",
-        "meta": "School of Hard Knocks",
-        "text": "I duplicated this to even things out a bit on desktop since I have a much longer work history for the time being 🤣.",
-        "year": "2015"
     }
+    
 
 ]

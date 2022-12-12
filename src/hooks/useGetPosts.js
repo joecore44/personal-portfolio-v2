@@ -23,6 +23,11 @@ query GetPosts {
           date
           uri
           slug
+          categories {
+            nodes {
+              name
+            }
+          }
         }
       }
   }

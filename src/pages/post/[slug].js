@@ -13,27 +13,13 @@ const PostPage = () => {
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
   const { slug } = router.query;
-  console.log(slug);
-
-  const key = "how-to-develop-your-brands-organic-social-media-content-strategy"
   const {error, loading, data } = getPost(slug);
   
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <div className="block py-20 text-center">
+    <Spinner />
+  </div>;
   if (error) return <p>Error : {error}</p>;
-  if(data) console.log(data);
 
-  /*
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted)
-    return (
-      <div className="block py-20 text-center">
-        <Spinner />
-      </div>
-    );
-*/
   return (
     <Layout>
       <Head>
@@ -82,15 +68,22 @@ const PostPage = () => {
                 Category :
                 <div className="inline-flex list-none gap-1.5">
                   <span className="after:content-[','] last:after:hidden">
-                    <Link href="/category/trend/1">
-                      <a className="text-body hover:text-primary">Trend</a>
+                    <Link href="#">
+                      <a className="text-body hover:text-primary">{data.post.categories.nodes[0].name}</a>
                     </Link>
                   </span>
                 </div>
               </div>
               <p className="mb-0 text-heading">
                 Published on :
-                <span className="ml-1.5 text-body">{data.post.date}</span>
+                <span className="ml-1.5 text-body">
+                {new Date(data.post.date).toLocaleDateString("en-us", {
+                  month: "short",
+                  day: "2-digit",
+                  year: "numeric",
+                })}
+                  
+                  </span>
               </p>
             </div>
           </div>

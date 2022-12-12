@@ -20,7 +20,7 @@ const ContactSection = () => {
   if (!data) return null;
 
   return (
-    <div className="grid grid-cols-9 gap-7">
+    <div className="grid grid-cols-1 gap-7">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -30,10 +30,9 @@ const ContactSection = () => {
         className="col-span-9 lg:col-span-4"
       >
         <div className="contact-information">
-          <h4>Contact Information</h4>
+          <h4>Get in Contact</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis,
-            iusto harum possimus non praesentium qui facere.
+            If you have a dev project in mind, feel free to reach out. 
           </p>
           <span className="inline-block h-1 w-20 rounded-full bg-primary bg-opacity-20"></span>
           <div className="contact-blocks mt-5 space-y-5">
@@ -42,14 +41,14 @@ const ContactSection = () => {
                 <RiPhoneLine />
               </span>
               <div className="content">
-                <h5 className="mb-2">Contact on phone</h5>
-                {data.phoneNumbers.map((number, index) => (
-                  <p className="mb-0" key={index}>
-                    <Link href={`tel:${number.split("-").join("")}`}>
-                      <a className="no-underline">{number}</a>
-                    </Link>
+                <h5 className="mb-2">Call</h5>
+                
+                  <p className="mb-0">
+                    <p className="mb-0">
+                      (469) 262-8504
+                      </p>
                   </p>
-                ))}
+          
               </div>
             </div>
             <div className="contact-block card flex p-4 md:p-5">
@@ -57,11 +56,11 @@ const ContactSection = () => {
                 <RiMailLine />
               </span>
               <div className="content">
-                <h5 className="mb-2">Contact on mail</h5>
+                <h5 className="mb-2">Write</h5>
                 {data.emailAddress.map((email, index) => (
                   <p className="mb-0" key={index}>
                     <Link href={`mailto:${email}`}>
-                      <a className="no-underline">{email}</a>
+                       <a className="no-underline">{email}</a>
                     </Link>
                   </p>
                 ))}
@@ -72,25 +71,16 @@ const ContactSection = () => {
                 <RiMapPinLine />
               </span>
               <div className="content">
-                <h5 className="mb-2">Contact address</h5>
+                <h5 className="mb-2">Visit</h5>
                 <p className="mb-0">
-                  121 King Street, Melbourne, United States
+                  🏔 Northern Arizona, United States
                 </p>
               </div>
             </div>
           </div>
         </div>
       </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: 0.4 }}
-        variants={childrenAnimation}
-        className="col-span-9 lg:col-span-5"
-      >
-        <ContactForm />
-      </motion.div>
+      
     </div>
   );
 };

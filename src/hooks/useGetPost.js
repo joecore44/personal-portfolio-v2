@@ -11,6 +11,11 @@ query GetPost($slug: ID!) {
     content(format: RENDERED)
     date
     title
+    categories {
+      nodes {
+        name
+      }
+    }
     featuredImage {
       node {
         altText

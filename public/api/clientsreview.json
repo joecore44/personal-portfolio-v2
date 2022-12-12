@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "name": "David Chester",
-        "meta": "Client - Envato.com",
+        "name": "Nick Durment",
+        "meta": "Director of Sales & Client Retention - LinkU Systems Inc.",
         "givenreview": 5.0,
-        "image": "/images/user-avatar-1.png",
-        "text": "Working with Bieber is very good experience for me. He’s a good person. If I need developer in future, I’ll definately hire him."
+        "image": "https://media.licdn.com/dms/image/C4D03AQFvtSqRi8bQmA/profile-displayphoto-shrink_100_100/0/1517596272196?e=1676505600&v=beta&t=onId1Q0A3KAQxxQswJJvwv30whmvzwgeNUZUEtdrK3s",
+        "text": "Joe is a valuable asset to the LinkU development team. His strongest attributes include reliability, work ethic and a genuine sense of responsibility to contribute to the overall success of the business. Joe is a progressive thinker who thrives on creative problem solving when it comes to finding solutions to client needs. I'm hesitant to recommend Joe while he is still on staff, however beyond employment with LinkU he has my full endorsement, and would be a great find for any company looking for a true professional!"
     },
     {
         "id": 2,
-        "name": "Emma Watson",
-        "meta": "Client - Envato.com",
-        "givenreview": 4.2,
-        "image": "/images/user-avatar-4.png",
-        "text": "Working with Bieber is very good experience for me. He’s a good person. If I need developer in future, I’ll definately hire him."
+        "name": "Richard Horne",
+        "meta": "Director of Operations - CreditRepair.com",
+        "givenreview": 5.0,
+        "image": "https://media.licdn.com/dms/image/C4E03AQGw5Ar5ChaLLg/profile-displayphoto-shrink_100_100/0/1646848815915?e=1676505600&v=beta&t=5WGL8FEaJqVf0Y-eEsdotiBWq4Eg_-VH_-VDIFFV64c",
+        "text": "Joseph has been an integral part of our deployment team for the past year and a half. He has been a great asset to our company and has helped us move most of our software services to the cloud with zero breaks in up time. He is a creative and critical thinker and has a great work ethic. He is an asset to any company and I would highly recommend him any time."
     },
     {
         "id": 3,
-        "name": "Jonathon Doe",
-        "meta": "Client - Envato.com",
-        "givenreview": 4.2,
-        "image": "/images/user-avatar-3.png",
-        "text": "Working with Bieber is very good experience for me. He’s a good person. If I need developer in future, I’ll definately hire him."
+        "name": "David Rodriguez",
+        "meta": "Adv. Certified ScrumMaster - Guidance IT Services",
+        "givenreview": 5.0,
+        "image": "https://media.licdn.com/dms/image/C5603AQG6B0BljcuFPw/profile-displayphoto-shrink_100_100/0/1654040484832?e=1676505600&v=beta&t=SeE1tW7CI3Oznvl_dlWjqR1o_Ym9jvwNy4kRuQFihgY",
+        "text": "I worked with Joe, and under his leadership worked with him to change the technical support team. Learned more than I ever had, set goals on a weekly basis and crushed them. Joe was very insipiring and encouraging. He inspired me learn and always think of ways to improve my skills and contribution to the team. thanks for your guidance Joe!"
     },
     {
         "id": 4,

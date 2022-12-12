@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { dehydrate, QueryClient } from "react-query";
 import { Element as Section } from "react-scroll";
-import { BlogHome } from "../components/elements/BlogHome";
 import {
   AboutSection,
   BlogSection,
@@ -17,7 +16,8 @@ import { Layout } from "../components/layout";
 import { SectionHeading } from "../components/utils";
 import { getPostsByPage } from "../lib/blogging";
 
-const Homepage1 = ({posts}) => {
+const Index = ({ posts }) => {
+ 
   return (
     <Layout>
       <Head>
@@ -108,7 +108,7 @@ const Homepage1 = ({posts}) => {
         className="reviews-section pt-24 lg:pt-28 xl:pt-32"
       >
         <div className="container mx-auto">
-          <SectionHeading title="Happy Clients" watermark="Reviews" />
+          <SectionHeading title="Happy People" watermark="Reviews" />
           <ReviewsSection />
         </div>
       </Section>
@@ -131,11 +131,13 @@ const Homepage1 = ({posts}) => {
   );
 };
 
-export default Homepage1;
+export default Index;
 
 export async function getStaticProps() {
   // const queryClient = new QueryClient();
   const { posts } = getPostsByPage();
+
+  
 
   // await queryClient.prefetchQuery('services', getServices)
 
