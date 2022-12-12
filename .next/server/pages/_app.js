@@ -89,7 +89,7 @@ var client_ = __webpack_require__(9114);
 
 const client = new client_.ApolloClient({
     //uri: 'https://dev.graylingagency.co/sites/grayling-v2/graphql',
-    uri: "http://52.88.143.227/graphql",
+    uri: "https://api.joeshepard.dev/graphql",
     cache: new client_.InMemoryCache()
 });
 
