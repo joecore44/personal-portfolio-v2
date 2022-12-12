@@ -4,7 +4,7 @@
     "fullName": "Joe Shepard",
     "thumbImage": "/images/formal-image-joe-s.png",
     "largeImage": "/images/about-image.jpg",
-    "bio": "Full Stack Software Engineer with a passion for building scalable products. I have a background in application development, system design, and machine learning. ",
+    "bio": "A Full Stack Software Engineer With a Passion for Building Scalable Systems. With a Background in Application Development, System Design, and Machine Learning. ",
     "age": 37,
     "nationality": "American",
     "languages": [
@@ -13,11 +13,8 @@
     "address": "Prescott, Arizona",
     "freelance": "Available",
     "socialAddress": {
-        "facebook": "https://facebook.com",
-        "twitter": "https://twitter.com",
-        "github": "https://github.com",
-        "linkedin": "https://linkedin.com",
-        "dribbble": "https://dribbble.com"
+        "github": "https://github.com/joecore44",
+        "linkedin": "https://www.linkedin.com/in/shepardjoe/"
     },
     "phoneNumbers": [
         "+012-3456-7891",

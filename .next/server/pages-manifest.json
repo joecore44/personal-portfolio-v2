@@ -1,6 +1,16 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/posts/[slug]": "pages/posts/[slug].js"
+  "/about": "pages/about.html",
+  "/404": "pages/404.html",
+  "/contact": "pages/contact.html",
+  "/homepage1": "pages/homepage1.html",
+  "/resume": "pages/resume.html",
+  "/works": "pages/works.html",
+  "/posts/[slug]": "pages/posts/[slug].html",
+  "/post/[slug]": "pages/post/[slug].html",
+  "/homepage2": "pages/homepage2.js",
+  "/": "pages/index.js",
+  "/category/[slug]/[page]": "pages/category/[slug]/[page].js"
 }
