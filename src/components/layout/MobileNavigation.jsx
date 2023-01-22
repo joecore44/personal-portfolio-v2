@@ -25,7 +25,7 @@ const MobileNavigation = ({ changeState }) => {
         <ul className="mb-0 list-none pl-0">
           <li className="block">
             {checkroute ? (
-              <Link href="/homepage2">
+              <Link href="/">
                 <a
                   className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
                   onClick={() => handleClick()}
@@ -52,19 +52,19 @@ const MobileNavigation = ({ changeState }) => {
           </li>
           <li className="block">
             {checkroute ? (
-              <Link href="/homepage2">
+              <Link href="/">
                 <a
                   className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
                   onClick={() => handleClick()}
                 >
-                  About
+                  Tech Stack
                   <span className="absolute left-0 top-auto bottom-5 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100"></span>
                 </a>
               </Link>
             ) : (
               <ScrollLink
                 activeClass="text-primary"
-                to="section-about"
+                to="section-skills"
                 spy={true}
                 smooth="easeInQuad"
                 offset={-74}
@@ -72,14 +72,14 @@ const MobileNavigation = ({ changeState }) => {
                 className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
                 onClick={() => handleClick()}
               >
-                About
+                Teck Stack
                 <span className="absolute left-0 top-auto bottom-5 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100"></span>
               </ScrollLink>
             )}
           </li>
           <li className="block">
             {checkroute ? (
-              <Link href="/homepage2">
+              <Link href="/">
                 <a
                   className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
                   onClick={() => handleClick()}
@@ -105,46 +105,19 @@ const MobileNavigation = ({ changeState }) => {
             )}
           </li>
           <li className="block">
-            {checkroute ? (
-              <Link href="/homepage2">
-                <a
-                  className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
-                  onClick={() => handleClick()}
-                >
-                  Works
-                  <span className="absolute left-0 top-auto bottom-5 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100"></span>
-                </a>
-              </Link>
-            ) : (
-              <ScrollLink
-                activeClass="text-primary"
-                to="section-portfolios"
-                spy={true}
-                smooth="easeInQuad"
-                offset={-74}
-                duration={1000}
-                className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
-                onClick={() => handleClick()}
-              >
-                Works
-                <span className="absolute left-0 top-auto bottom-5 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100"></span>
-              </ScrollLink>
-            )}
-          </li>
-          <li className="block">
             <Link href="/posts/1">
               <a
                 className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
                 onClick={() => handleClick()}
               >
-                Blog
+                Projects
                 <span className="absolute left-0 top-auto bottom-5 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100"></span>
               </a>
             </Link>
           </li>
           <li className="block">
             {checkroute ? (
-              <Link href="/homepage2">
+              <Link href="/">
                 <a
                   className="group relative inline-block cursor-pointer py-2 text-lg uppercase tracking-wider text-heading before:text-primary"
                   onClick={() => handleClick()}
