@@ -1,16 +1,16 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/about": "pages/about.html",
-  "/homepage1": "pages/homepage1.html",
+  "/_document": "pages/_document.js",
   "/contact": "pages/contact.html",
+  "/homepage1": "pages/homepage1.html",
   "/post/[slug]": "pages/post/[slug].html",
-  "/posts/[slug]": "pages/posts/[slug].html",
   "/resume": "pages/resume.html",
   "/works": "pages/works.html",
-  "/category/[slug]/[page]": "pages/category/[slug]/[page].js",
+  "/posts/[slug]": "pages/posts/[slug].html",
+  "/_error": "pages/_error.js",
   "/": "pages/index.js",
-  "/homepage2": "pages/homepage2.js"
+  "/homepage2": "pages/homepage2.js",
+  "/category/[slug]/[page]": "pages/category/[slug]/[page].js"
 }
