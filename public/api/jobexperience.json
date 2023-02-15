@@ -1,34 +1,41 @@
 [
     {
         "id": 1,
-        "title": "Software Engineer & Fractional CTO",
-        "meta": "Grayling Agency",
-        "text": "Grayling Agency is one of the highest-rated digital marketing teams on UW. As part of an internal initiative to leave UW behind Grayling Acquired Apollo Intel and our clients in April of 2022. I stayed as their part-time CTO to continue the Apollo product development and handle the backend tech for the company.",
-        "year": "2022 - Present"
+        "title": "Chief Technology Officer",
+        "meta": "Peter MD.",
+        "text": "Peter MD getpetermd.com is the largest online men's health clinic in North America. As of Feb 2023 I am now the new Chief Technology Officer overseeing all technology and infrastructure for the company.",
+        "year": "2023 - Present"
     },
     {
         "id": 2,
+        "title": "Software Engineer & Fractional CTO",
+        "meta": "Grayling Agency",
+        "text": "Grayling Agency is one of the highest-rated digital marketing teams on UW. As part of an internal initiative to leave UW behind Grayling Acquired Apollo Intel and our clients in April of 2022. I stayed as their part-time CTO to continue the Apollo product development and handle the backend tech for the company.",
+        "year": "2022"
+    },
+    {
+        "id": 3,
         "title": "Co-Founder & Business Owner",
         "meta": "Core Sports Nutrition LLC.",
         "text": "Core Nutrition is a brick-and-mortar shop that provides nutritional supplements and coaching. My wife and I founded the business in 2021. On top of the standard startup business tasks, I handle all company branding on and offline and digital marketing for the shop. I also built a nutrition coaching platform with a Django backend and React/NEXT frontend that runs on AWS EC2 + Vercel.",
         "year": "2021 - Present"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Software Engineer & Founder",
         "meta": "Apollo Intel",
         "text": "Apollo is a multi-channel, cold outreach SaaS that we couple with digital campaigns to generate B2B leads using automation and sentiment analysis. I built the first iterations of the product alone using a Flask backend, AWS lambda functions for automation, and an ugly Bootsrap admin panel but launched with a working MVP and 5 paying clients. Six months later I took on a small team that included another engineer and together we rebuilt the admin panel in Vue.js, brought in a sentiment service that we built using IBM's Watson AI, and redesigned our infrastructure to scale horizontally with added load from usage.",
         "year": "2021 - 2022"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Software Engineer",
         "meta": "PCTronics Inc.",
         "text": "I was brought on to build a new scalable, cloud-hosting environment for clients to replace onsite hardware systems. I also built a field service reporting system to replace paper forms for all field engineers. I stayed on for a few years as a fractional developer for different clients as well as an entry-level systems engineer for a few large-sized client projects.",
         "year": "2015 - 2021"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Web Developer",
         "meta": "LinkU Systems Inc.",
         "text": "I supported over 8,000 active websites running on the LinkU platform. We ran a Windows server, IIS, MSSQL, and Classic ASP/VB stack that physically ran in a local data center. I handled all junior to mid-level development projects including feature builds, escalated support issues, and front-end development changes.",
